@@ -20,7 +20,7 @@ header {
 header h {
     color: #fff;
     font-family: Monoton;
-    animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon 1.5s ease-in-out infinite alternate;
 }
 
 
@@ -33,20 +33,31 @@ footer {
 }
 
 footer p {
-     font-family: "Press Start 2P";
-     color: #B6FF00;
+    font-family: "Press Start 2P";
+    color: #B6FF00;
 }
 
 a {
     width: 100%;
     height: 100%;
-    background:  linear-gradient(30deg, #B6FF00 60%, #FF1177 60%);
+    background: linear-gradient(-30deg, #B6FF00 30%, #FF1177);
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+
 
 
 }
-main#index-page{
+
+a p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3em;
+    color: aliceblue;
+
+}
+
+main#index-page {
     height: 600px;
     width: auto;
     padding: 5px;
@@ -55,9 +66,62 @@ main#index-page{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*        COLLAPSABLES      */
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+
+}
+
+
+
+
 /*        KEYFRAMES      */
 
-@keyframes neon1 {
+@keyframes neon {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
     }
