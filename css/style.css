@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton|Press+Start+2P');
-
+@import url('https://use.typekit.net/zga2osr.css');
 
 body {
     background-color: #222222;
@@ -10,16 +10,18 @@ body {
 }
 
 header {
+    font-size: 2.4em;
     text-align: center;
-    font-size: 8em;
-    margin: 20px 0 50px 0;
+    margin: 20px 0 0 0;
     width: 100%;
 }
 
-header h {
+header h1 {
     color: #fff;
     font-family: Monoton;
+    font-weight: 100;
     animation: neon 1.5s ease-in-out infinite alternate;
+    margin-bottom: 0px;
 }
 
 
@@ -45,9 +47,10 @@ footer p {
 
 }
 
-#btn-page {
+.btn-page {
     text-decoration: none;
-    font-size: 0.6em;
+    font-size: 0.8em;
+    font-weight: 100;
     border-radius: 5px;
     cursor: pointer;
     border-radius: 5px;
@@ -56,7 +59,7 @@ footer p {
     color: #FF1177;
 }
 
-#btn-page:hover{
+.btn-page:hover {
     color: #fff;
 }
 
@@ -77,31 +80,38 @@ main#index-page {
     flex-direction: column;
 }
 
-.profile{
+.profile {
     padding: 23px;
 }
 
-#me-page h2{
+#me-page h2 {
     font-family: "Press Start 2P";
     color: #B6FF00;
-    font-size: 2.8em;
+    font-size: 3em;
 
 }
 
-#me-page p{
-    font-size: 2em;
+#portfolio-page{
+    margin-top: 20px;
+}
+
+#me-page p {
+    font-family: eurostile, sans-serif;
+    font-size: 2.4em;
     color: greenyellow;
 }
 
+.content p {
+    font-family: eurostile, sans-serif;
+    font-size: 2.1em;
+}
 
 
-
-
-
-
-
-
-
+.responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%
+}
 
 
 
@@ -125,7 +135,7 @@ main#index-page {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 2.8em;
+    font-size: 1.9em;
 }
 
 .active,
@@ -141,6 +151,30 @@ main#index-page {
     background-color: white;
     border-radius: 10px;
 
+}
+
+
+
+
+
+/* PORTFOLIO LINK BUTTONS */
+
+.plink {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Press Start 2P";
+    font-size: 1.5em;
+}
+
+.plink:hover {
+    background-color: #555;
+}
+
+.plink:active {
+    background-color: black;
 }
 
 
