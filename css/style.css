@@ -9,10 +9,14 @@ body {
 
 }
 
+#index-page header{
+    margin-bottom: 50px;
+}
+
 header {
     font-size: 2.4em;
     text-align: center;
-    margin: 20px 0 0 0;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -37,14 +41,11 @@ footer p {
     color: #FF1177;
 }
 
-#btn-homescrn {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-30deg, #B6FF00 30%, #FF1177);
-    font-size: 20px;
-    border-radius: 30px;
-    text-decoration: none;
-
+.centered-logo {
+    max-width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-page {
@@ -64,22 +65,6 @@ footer p {
 }
 
 
-a p {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 3em;
-    color: aliceblue;
-
-}
-
-main#index-page {
-    height: 600px;
-    width: auto;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
 .profile {
     padding: 23px;
 }
@@ -91,7 +76,7 @@ main#index-page {
 
 }
 
-#portfolio-page{
+#portfolio-page {
     margin-top: 20px;
 }
 
@@ -112,6 +97,7 @@ main#index-page {
     margin-top: 10px;
     text-transform: uppercase;
 }
+
 .content h4 {
     font-family: eurostile, sans-serif;
     font-size: 2.5em;
@@ -120,7 +106,7 @@ main#index-page {
     text-transform: uppercase;
 }
 
-#pool{
+#pool {
     font-size: 2.4em;
     font-family: eurostile, sans-serif;
 }
@@ -128,10 +114,15 @@ main#index-page {
 .responsive {
     max-width: 100%;
     height: auto;
+}
+
+#me-page img.responsive{
     border-radius: 10%
 }
 
-
+.spin{
+    animation: spin 13s linear infinite forwards;
+}
 
 
 
@@ -208,4 +199,9 @@ main#index-page {
     to {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
     }
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
