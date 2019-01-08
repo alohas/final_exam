@@ -106,6 +106,24 @@ main#index-page {
     font-size: 2.1em;
 }
 
+.content h3 {
+    font-family: eurostile, sans-serif;
+    font-size: 2.5em;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.content h4 {
+    font-family: eurostile, sans-serif;
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#pool{
+    font-size: 2.4em;
+    font-family: eurostile, sans-serif;
+}
 
 .responsive {
     max-width: 100%;
