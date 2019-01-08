@@ -9,7 +9,7 @@ body {
 
 }
 
-#index-page header{
+#index-page header {
     margin-bottom: 50px;
 }
 
@@ -116,17 +116,13 @@ footer p {
     height: auto;
 }
 
-#me-page img.responsive{
+#me-page img.responsive {
     border-radius: 10%
 }
 
-.spin{
+.spin {
     animation: spin 13s linear infinite forwards;
 }
-
-
-
-
 
 
 
@@ -161,8 +157,6 @@ footer p {
     border-radius: 10px;
 
 }
-
-
 
 
 
@@ -202,6 +196,123 @@ footer p {
 }
 
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/*        DEKSTOP VIEW             */
+
+
+@media screen and (min-width:1024px) {
+
+    body {
+        font-size: 20px;
+    }
+
+
+    header {
+        font-size: 3em;
+    }
+
+    .centered-logo{
+        max-width: inherit;
+    }
+
+
+    #me-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'h1-area h2-area h3-area'
+            'p1-area p2-area p3-area'
+        'img1-area img2-area img3-area'
+        'img4-area img4-area img4-area';
+        padding: 40px;
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+        font-size: 1vw;
+
+    }
+
+    .meh1g {
+        grid-area: h1-area;
+    }
+    .meh2g{
+        grid-area: h2-area;
+    }
+    .meh3g{
+        grid-area: h3-area;
+    }
+    .mep1g{
+        grid-area: p1-area;
+         text-align: justify;
+    }
+    .mep2g{
+        grid-area: p2-area;
+         text-align: justify;
+    }
+    .mep3g{
+        grid-area: p3-area;
+         text-align: justify;
+    }
+    .mei1g{
+        grid-area: img1-area;
+    }
+    .mei2g{
+        grid-area: img2-area;
+    }
+    .mei3g{
+        grid-area: img3-area;
+    }
+    .mei4g{
+        grid-area: img4-area;
+        text-align-last: center;
+    }
+
+    #portfolio-page{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .content{
+        display: block;
+    }
+
+    .content p{
+        text-align:justify;
+    }
+
+    #pool{
+        text-align: left;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
